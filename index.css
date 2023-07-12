@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Karla:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --font-family: 'Karla', sans-serif;
+}
+.contribution{
+  width: 600px;
+  box-shadow: 5px 5px 10px rgba(171, 169, 169, 0.3);
+}
+.general-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body{
+  background: var(--light-gray);
+}
+.header{
+  background: white;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  padding: 30px;
+  font-family: var(--font-family);
+  
+}
+.header h1{
+  color: var(--cyan);
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.header h4{
+  color: var(--bright-yellow);
+  margin-bottom: 20px;
+}
+.header p{
+  color: var(--grayish-blue);
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.sidebar{
+  width: 50%;
+  background: var(--cyan);
+  height: 270px;
+  padding: 30px;
+  font-family: var(--font-family);
+  border-radius: 0 0 0 5px;
+}
+.sidebar h2{
+  font-weight: 400;
+  font-size: 20px;
+}
+.sidebar p{
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--light-gray);
+}
+.flex-item{
+  padding: 15px 0;
+}
+.flex-item p{
+  color: var(--light-gray);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.flex-item{
+  display: flex;
+  gap: 1rem;
+  padding-top: 30px;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: var(--bright-yellow);
+  width: 210px;
+  color: white;
+  margin-top: 30px;
+  box-shadow: 5px 5px 10px hsla(218, 22%, 67%, 0.3);
+}
+.footer{
+  width: 50%;
+  height: 270px;
+  background: hsla(179, 62%, 44%, 0.89);
+  padding: 30px;
+  font-family: var(--font-family);
+  border-radius: 0 0 5px 0;
+}
+.footer h2{
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer p{
+  width: 160px;
+  font-size: 12px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.semi-container{
+  display: flex;
+  color: white;
+}
+@media(max-width: 500px){
+  .general-container{
+    height: 100%;
+    padding: 50px;
+  }
+  .header{
+  width: 350px;
+  border-radius: 5px 5px 0 0;
+}
+.semi-container{
+  flex-direction: column;
+}
+.sidebar{
+  width: 350px;
+  border-radius: 0 0 0 0;
+}
+.footer{
+  width: 350px;
+  border-radius: 0 0 5px 5px;
+}
+}
